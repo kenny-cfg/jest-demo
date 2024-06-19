@@ -8,4 +8,12 @@ describe('sum function', () => {
 
     expect(actual).toBe(expected);
   })
+  
+  it('deals with negative numbers', () => {
+    const expected = 5;
+    
+    const actual = sum(10, -5);
+
+    expect(actual).toBe(expected);
+  })
 })
