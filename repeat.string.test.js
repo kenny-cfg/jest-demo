@@ -1,4 +1,12 @@
-const repeat = (source) => source + source;
+const repeat = (source) => {
+  const arrayOfCharacters = source.split('')
+  let result = ''
+  for (const character of arrayOfCharacters) {
+    result += character
+    result += character
+  }
+  return result
+}
 
 describe('repeat function', () => {
   it('repeats a single character', () => {
