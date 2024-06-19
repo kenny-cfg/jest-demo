@@ -1,7 +1,6 @@
 const repeat = (source) => {
-  const arrayOfCharacters = source.split('')
   let result = ''
-  for (const character of arrayOfCharacters) {
+  for (const character of source) {
     result += character
     result += character
   }
