@@ -1,9 +1,7 @@
-const repeat = (source) => {
-  return source
-    .split('')
-    .map(character => character + character)
-    .join('')
-}
+const repeat = (source) => source
+  .split('')
+  .map(character => character + character)
+  .join('')
 
 describe('repeat function', () => {
   it('repeats a single character', () => {
