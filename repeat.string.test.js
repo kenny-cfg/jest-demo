@@ -1,10 +1,8 @@
 const repeat = (source) => {
-  let result = ''
-  for (const character of source) {
-    result += character
-    result += character
-  }
-  return result
+  return source
+    .split('')
+    .map(character => character + character)
+    .join('')
 }
 
 describe('repeat function', () => {
@@ -15,7 +13,7 @@ describe('repeat function', () => {
 
     expect(actual).toBe(expected)
   })
-  
+
   it('repeats a string', () => {
     const expected = 'aabbcc'
 
