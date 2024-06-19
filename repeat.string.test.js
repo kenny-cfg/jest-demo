@@ -19,4 +19,12 @@ describe('repeat function', () => {
 
     expect(actual).toBe(expected)
   })
+  
+  it('returns undefined for no arguments', () => {
+    const expected = undefined
+
+    const actual = repeat(undefined)
+    
+    expect(actual).toBe(expected)
+  })
 })
