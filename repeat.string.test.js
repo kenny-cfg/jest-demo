@@ -8,4 +8,12 @@ describe('repeat function', () => {
 
     expect(actual).toBe(expected)
   })
+  
+  it('repeats a string', () => {
+    const expected = 'aabbcc'
+
+    const actual = repeat('abc')
+
+    expect(actual).toBe(expected)
+  })
 })
