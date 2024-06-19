@@ -1,4 +1,4 @@
-const subtract = (a, b) => 5
+const subtract = (a, b) => a - b
 
 describe('subtract', () => {
   it('works for two numbers', () => {
